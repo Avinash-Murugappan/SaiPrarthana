@@ -5,6 +5,7 @@ import NagaSaiLive from './pages/NagaSaiLive'
 import{Route, BrowserRouter as Router} from 'react-router-dom';
 import Footer from './components/Footer'
 import Home from './pages/Home'
+import AudioPlayer from './components/AudioPlayer'
 
 const Body = styled.section`
   background-color: #eef0f1;
@@ -22,6 +23,7 @@ function App() {
       <Body>
       <Route path='/' exact component={Home}/>
      <Route path='/NagaSaiLive' component={NagaSaiLive}/>
+     <Route path='/a' component={AudioPlayer}/>
       </Body>
       <br/>
       <Footer/>
