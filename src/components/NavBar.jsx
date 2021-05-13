@@ -43,7 +43,7 @@ export default function NavBar() {
             Sai Prarthana
           </Typography>
          {/*} <Link to="/NagaSaiLive"><Button className={classes.button}>NagaSaiLive</Button></Link>*/}
-         <Link to="/"><Button  className={classes.button}>Home</Button></Link>
+         <Link style={{ textDecoration: 'none' }} to="/"><Button  className={classes.button}>Home</Button></Link>
           <Button  className={classes.button} >About</Button>
         </Toolbar>
       </AppBar>

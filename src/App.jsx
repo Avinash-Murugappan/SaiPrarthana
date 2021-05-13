@@ -5,8 +5,8 @@ import NagaSaiLive from './pages/NagaSaiLive'
 import{Route, BrowserRouter as Router} from 'react-router-dom';
 import Footer from './components/Footer'
 import Home from './pages/Home'
-import AudioPlayer from './components/AudioPlayer'
-
+import AudioPlayer from './components/player/AudioPlayer'
+import {useEffect, useState} from 'react'
 const Body = styled.section`
   background-color: #eef0f1;
 `;
@@ -15,7 +15,10 @@ const Div = styled.section`
 
 `;
 
+
 function App() {
+
+
   return (
     <Router>
     <Div style={{minHeight:'100vh', paddingBottom:'100px', position:'relative'}} >
@@ -23,7 +26,7 @@ function App() {
       <Body>
       <Route path='/' exact component={Home}/>
      <Route path='/NagaSaiLive' component={NagaSaiLive}/>
-     <Route path='/a' component={AudioPlayer}/>
+     <Route path='/StavanManjiri' component={AudioPlayer}/>
       </Body>
       <br/>
       <Footer/>
