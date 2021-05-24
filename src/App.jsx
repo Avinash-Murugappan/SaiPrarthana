@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import AudioPlayer from './components/player/AudioPlayer'
 import {useEffect, useState} from 'react'
+
 const Body = styled.section`
   background-color: #eef0f1;
 `;
@@ -17,6 +18,7 @@ const Div = styled.section`
 
 
 function App() {
+
 
 
   return (

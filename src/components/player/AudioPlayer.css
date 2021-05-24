@@ -3,17 +3,20 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  width: 100%;
+  min-width: 100vw;
 }
 
 .player {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   background-color: #536b78;
   margin: 0px auto;
-  padding: 30px;
+  padding: 0px;
   border-radius: 16px;
-  box-shadow: inset -6px -6px 12px rgba(0, 0, 0, 0.8),
-    inset 6px 6px 12px rgba(255, 255, 255, 0.4);
+  /* box-shadow: inset -6px -6px 12px rgb(255, 255, 255),
+    inset 6px 6px 12px rgba(255, 255, 255); */
 }
 
 .player > h4 {
@@ -48,9 +51,10 @@
   object-fit: contain;
   width: 100%;
   max-width: 250px;
-  border-radius: 50%;
-  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.8),
-    -6px -6px 12px rgba(255, 255, 255, 0.4);
+  height: 15rem;
+  /* border-radius: 50%; */
+  /* box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.8),
+    -6px -6px 12px rgba(0, 0, 0, 0.8); */
 }
 
 .player--details .details-img:after {
@@ -61,8 +65,8 @@
   left: -25px;
   right: -25px;
   bottom: -25px;
-  border-radius: 50%;
-  border: 3px dashed #fff;
+  /* border-radius: 50%; */
+  /* border: 3px dashed #fff; */
 }
 
 .player--details .details-title {
@@ -77,4 +81,14 @@
   font-size: 20px;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.item-2 {
+  margin-right: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .item-2 {
+    margin-right: 2.5rem;
+  }
 }

@@ -26,7 +26,7 @@ export default function CButton(props) {
 
     return (
     <div className={classes.root}>
-      <Button variant="contained" className={classes.button}>{props.ButtonName}</Button>
+      <Button style={{  fontFamily: "Fira Mono, monospace", fontSize:"1.1rem"}} variant="contained" className={classes.button}>{props.ButtonName}</Button>
     </div>
   );
 }

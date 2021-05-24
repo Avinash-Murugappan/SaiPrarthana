@@ -10,11 +10,15 @@ export default function AudioPlayer() {
         <div className="AppPlayer">
 
         <div className="player">
-         <Details/>
-        <ReactAudioPlayer
+        <div className="item-1"><Details/></div>
+         <div className="item-2">
+           <h2 className="details-title">Sainath Stavan Manjiri</h2>
+        <h4 className="details-artist">Pramod Medhi</h4>
+         <ReactAudioPlayer
             src={Audio}
             controls
-        />
+        /></div>
+
     </div>
         </div>
     )

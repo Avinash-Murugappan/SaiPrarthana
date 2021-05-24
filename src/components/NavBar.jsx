@@ -38,13 +38,13 @@ export default function NavBar() {
   return (
       <div className={classes.root}>
       <AppBar position="sticky" className={classes.header}>
-        <Toolbar>
-        <Typography variant="h6" className={classes.title} >
+        <Toolbar >
+        <Typography style={{ fontFamily: "Fira Mono, monospace", fontSize:"2rem"}}  variant="h6" className={classes.title} >
             Sai Prarthana
           </Typography>
          {/*} <Link to="/NagaSaiLive"><Button className={classes.button}>NagaSaiLive</Button></Link>*/}
-         <Link style={{ textDecoration: 'none' }} to="/"><Button  className={classes.button}>Home</Button></Link>
-          <Button  className={classes.button} >About</Button>
+         <Link style={{ textDecoration: 'none' }} to="/"><Button  style={{ fontFamily: "Fira Mono, monospace", fontSize:"1.3rem"}}  className={classes.button}>Home</Button></Link>
+          <Button style={{ fontFamily: "Fira Mono, monospace", fontSize:"1.3rem"}}  className={classes.button} >About</Button>
         </Toolbar>
       </AppBar>
   </div>
